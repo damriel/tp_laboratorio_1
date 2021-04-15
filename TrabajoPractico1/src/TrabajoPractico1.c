@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "funcionesMatematicas.h"
 #include "funcionesBasicas.h"
 
@@ -63,6 +64,7 @@ int main(void) {
 			break;
 		default:
 			printf("La opcion ingresada no es correcta, vuelva a intentarlo.\n");
+			fflush(stdin);
 			system("pause");
 			break;
 		}

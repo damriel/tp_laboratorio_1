@@ -12,12 +12,12 @@
 
 #endif /* FUNCIONESBASICAS_H_ */
 
-/** \brief muestra un menu de opciones de una calculadora immprimiendo dentro del mismo los valores de los operandos que hayan sido ingresados o los reemplaza con "x" e "y"
+/** \brief muestra un menu de opciones de una calculadora immprimiendo dentro del mismo los valores de los operandos que hayan sido ingresados o los reemplaza con "x" e "y" respectivamente
  *
- * \param numUno int recibe el primer operando ("A") si se hubiera ingresado
- * \param numDos int recibe el segundo operando ("B") si se hubiera ingresado
- * \param flagNumUno int recibe 1 si se ingreso el primer operando o 0 si no fue ingresado
- * \param flagNumDos int recibe 1 si se ingreso el segundo operando o 0 si no fue ingresado
+ * \param numUno int primer operando ("A"), si se hubiera ingresado
+ * \param numDos int segundo operando ("B"), si se hubiera ingresado
+ * \param flagNumUno int valor del flag que indica si se ingreso el primer operando
+ * \param flagNumDos int valor del flag que indica si se ingreso el segundo operando
  * \return int devuelve la opcion elegida por el usuario
  *
  */
@@ -36,21 +36,21 @@ void ingresarOperando(int* operando, int* flagOperando, int* flagCalculos);
 
 /** \brief Muestra en pantalla los resultados de todas las operaciones realizadas o los problemas que surgieron en cada una
  *
- * \param operando1 int recibe el valor del primer operando
- * \param operando2 int recibe el valor del segundo operando
- * \param rSuma int recibe el resultado de la operacion suma
- * \param rResta int recibe el resultado de la operacion resta
- * \param rDivision float recibe el resultado de la operacion division
- * \param rMultipicacion int recibe el resultado de la operacion multiplicacion
- * \param unsigned long long int rFactorialA recibe el resultado de la operacion factorial del primer operando
- * \param unsigned long long int rFactorialB recibe el resultado de la operacion factorial del segundo operando
- * \param pFlagCalculos int recibe 0 si no se realizaron las operaciones o 1 si han sido realizadas
+ * \param operando1 int valor del primer operando
+ * \param operando2 int valor del segundo operando
+ * \param rSuma int valor del resultado de la operacion suma
+ * \param rResta int valor del resultado de la operacion resta
+ * \param rDivision float valor del resultado de la operacion division
+ * \param rMultipicacion int valor del resultado de la operacion multiplicacion
+ * \param unsigned long long int rFactorialA valor del resultado de la operacion factorial del primer operando
+ * \param unsigned long long int rFactorialB valor del resultado de la operacion factorial del segundo operando
+ * \param pFlagCalculos int flag que indica si se se realizaron o no las operaciones matematicas
  * \return void
  *
  */
 void mostrarResultados(int operando1, int operando2, int rSuma, int rResta, float rDivision, int rMultipicacion, unsigned long long int rFactorialA, unsigned long long int rFactorialB, int pFlagCalculos);
 
-/** \brief Pide y valida la opcion de salida cuando es seleccionada por el usuario
+/** \brief Solicita al usuario ingresar una opcion para confirmar o cancelar la salida y la valida
  *
  * \return char devuelve el caracter ingresado por el usuario, 's' para salir del programa o 'n' para seguir usando el programa
  *
