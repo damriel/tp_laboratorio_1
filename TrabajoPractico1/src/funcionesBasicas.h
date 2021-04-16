@@ -24,11 +24,11 @@
 int mostrarMenu(int numUno, int numDos, int flagNumUno, int flagNumDos);
 
 /** \brief solicita al usuario que ingrese un operando por teclado, lo almacena y carga el flag con valor 1 para saber que se ingreso el operando en cuestion.
- *         De haber hecho las operaciones con operandos ya ingresados avisara que debera realizar nuevamente las operaciones si cambia el operando almacenado.
+ *         De haber hecho las operaciones con operandos ya ingresados pedira confirmacion para modificar el operando.
  *
- * \param operando int* direccion de memoria del operando a ingresar
- * \param flagOperando int* direccion de memoria del flag que indica si se cargó o no el operando
- * \param flagCalculos int* direccion de memoria del flag que indica si se realizaron las operaciones matemáticas
+ * \param operando int* puntero al espacio en memoria donde se guardara el operando
+ * \param flagOperando int* puntero al espacio en memoria donde se guardara el flag que indica si se cargó o no el operando
+ * \param flagCalculos int* puntero al espacio en memoria del flag que indica si se realizaron las operaciones matemáticas
  * \return void
  *
  */
@@ -36,8 +36,12 @@ void ingresarOperando(int* operando, int* flagOperando, int* flagCalculos);
 
 /** \brief Muestra en pantalla los resultados de todas las operaciones realizadas o los problemas que surgieron en cada una
  *
- * \param operando1 int valor del primer operando
- * \param operando2 int valor del segundo operando
+ * \param sumaOk int valor de retorno de la funcion suma
+ * \param restaOk int valor de retorno de la funcion resta
+ * \param divisionOk int valor de retorno de la funcion division
+ * \param multiplicacionOk int valor de retorno de la funcion multiplicacion
+ * \param factorialAOk int valor de retorno de la funcion factorial de A
+ * \param factorialBOk int valor de retorno de la funcion factorial de B
  * \param rSuma int valor del resultado de la operacion suma
  * \param rResta int valor del resultado de la operacion resta
  * \param rDivision float valor del resultado de la operacion division
@@ -48,7 +52,7 @@ void ingresarOperando(int* operando, int* flagOperando, int* flagCalculos);
  * \return void
  *
  */
-void mostrarResultados(int operando1, int operando2, int rSuma, int rResta, float rDivision, int rMultipicacion, unsigned long long int rFactorialA, unsigned long long int rFactorialB, int pFlagCalculos);
+void mostrarResultados(int sumaOk, int restaOk, int divisionOk, int multiplicacionOk, int factorialAOk, int factorialBOk, int rSuma, int rResta, float rDivision, int rMultipicacion, unsigned long long int rFactorialA, unsigned long long int rFactorialB, int flagCalculos);
 
 /** \brief Solicita al usuario ingresar una opcion para confirmar o cancelar la salida y la valida
  *
@@ -56,3 +60,11 @@ void mostrarResultados(int operando1, int operando2, int rSuma, int rResta, floa
  *
  */
 char validarSalida();
+
+/** \brief Solicita un numero al usuario, luego de verificarlo devuelve el resultado
+ *
+ * \param pResultado int* Puntero al espacio en memoria donde se dejara el resultado de la funcion
+ * \return int retorna 0 si se obtuvo el numero o -1 si no
+ *
+ */
+int utn_getNumero(int* pResultado);

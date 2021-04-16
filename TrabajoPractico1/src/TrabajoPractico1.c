@@ -21,6 +21,12 @@ int main(void) {
 	int flagCalculos=0;
 	int operandoUno;
 	int operandoDos;
+	int retornoSuma;
+	int retornoResta;
+	int retornoDivision;
+	int retornoMultiplicacion;
+	int retornoFactorialA;
+	int retornoFactorialB;
 	int rtaProducto;
 	int rtaResta;
 	int rtaSuma;
@@ -41,12 +47,12 @@ int main(void) {
 		case 3:
 			if(flagPrimerOperando && flagSegundoOperando)
 			{
-				suma(operandoUno, operandoDos, &rtaSuma);
-				resta(operandoUno, operandoDos, &rtaResta);
-				division(operandoUno, operandoDos, &rtaDivision);
-				multiplicacion(operandoUno, operandoDos, &rtaProducto);
-				factorial(operandoUno, &rtaFactorialA);
-				factorial(operandoDos, &rtaFactorialB);
+				retornoSuma = suma(operandoUno, operandoDos, &rtaSuma);
+				retornoResta = resta(operandoUno, operandoDos, &rtaResta);
+				retornoDivision = division(operandoUno, operandoDos, &rtaDivision);
+				retornoMultiplicacion = multiplicacion(operandoUno, operandoDos, &rtaProducto);
+				retornoFactorialA = factorial(operandoUno, &rtaFactorialA);
+				retornoFactorialB = factorial(operandoDos, &rtaFactorialB);
 				flagCalculos=1;
 				printf("Operaciones realizadas.\n");
 			}
@@ -57,7 +63,7 @@ int main(void) {
 			system("pause");
 			break;
 		case 4:
-			mostrarResultados(operandoUno, operandoDos, rtaSuma, rtaResta, rtaDivision, rtaProducto, rtaFactorialA, rtaFactorialB, flagCalculos);
+			mostrarResultados(retornoSuma, retornoResta, retornoDivision, retornoMultiplicacion, retornoFactorialA, retornoFactorialB, rtaSuma, rtaResta, rtaDivision, rtaProducto, rtaFactorialA, rtaFactorialB, flagCalculos);
 			break;
 		case 5:
 			confirmacionSalida=validarSalida();
