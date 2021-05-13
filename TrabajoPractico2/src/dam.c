@@ -26,13 +26,13 @@ static int esNumeroFlotante(char* cadena, int limite);
 int mainMenu()
 {
     int option;
+    printf("  *** MENU PRINCIPAL ***\n");
     printf("1) ALTA\n");
     printf("2) MODIFICAR\n");
     printf("3) BAJA\n");
     printf("4) INFORMAR\n");
-    printf("5) MOSTRAR\n");
-    printf("10) SALIR\n");
-    dam_getNumero(&option, "Ingrese una opcion: ", "ERROR, debe ser entre 1 y 10.\n",1,10,10);
+    printf("5) SALIR\n");
+    dam_getNumero(&option, "Ingrese una opcion: ", "ERROR, debe ser entre 1 y 5.\n",1,5,10);
     return option;
 }
 

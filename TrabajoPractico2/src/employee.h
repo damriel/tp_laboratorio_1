@@ -115,6 +115,18 @@ int printEmployees(eEmployee* list, int len);
  */
 void printOneEmployee(eEmployee anEmployee);
 
+/** \brief Show up a report menu with 2 options.
+ *
+ * \return int option selected or (0) if too many invalid options entered.
+ *
+ */
 int reportMenu();
 
+/** \brief calculates the total salary, the average salary and how many employees have salary above the average.
+ *
+ * \param list eEmployee* Pointer to array of employees
+ * \param len int Array length
+ * \return int Return (-1) if Error [Invalid length or NULL pointer] - (0) if Ok
+ *
+ */
 int reportTwo(eEmployee* list, int len);

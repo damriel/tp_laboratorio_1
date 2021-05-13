@@ -3,8 +3,8 @@
  Name        : TrabajoPractico2.c
  Author      : Damian G. Lopez
  Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
+ Copyright   : GPL-3.0 License
+ Description : Basic ABM with an "employee" struct
  ============================================================================
  */
 
@@ -19,31 +19,13 @@
 int main()
 {
 	setbuf(stdout, NULL);
-    eEmployee arrayEmployees[LEN]={
-        {1001,"Damian Gabriel","Lopez",19000,13,0},
-        {1002,"Jefferson","Chocue",12000,15,0},
-        {1003,"Marianela","Molinari",17000,1,0},
-        {1004,"Mariano Facundo","Seif",18000,11,0},
-        {1005,"Juan Pablo","Perez",15500,10,0},
-        {1006,"Carolina Victoria","Lopez",13700,3,0},
-        {1007,"Maria Fernanda","Magallanes",11000,8,0},
-        {1008,"Claudio Victor","Lopez",10200,19,0},
-        {1009,"Sandra Lidia","Rosso",22300,29,0},
-        {1010,"Gustavo","Cordero",16900,23,0},
-        {1011,"Bowie La Rosalia","Molinari",19900,30,0}
-    };
     int flagCase1=0;
     int nextId=1001;
     int orden;
     char confirm='n';
+    eEmployee arrayEmployees[LEN];
 
     initEmployees(arrayEmployees, LEN);
-
-    for(int i=0;i<11;i++)
-    {
-        arrayEmployees[i].isEmpty=0;
-    }
-
 
     do{
         eEmployee auxEmployee={0};
