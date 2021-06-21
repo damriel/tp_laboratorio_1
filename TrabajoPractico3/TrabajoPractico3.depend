@@ -1,0 +1,97 @@
+# depslib dependency file v1.0
+1624306373 source:c:\users\usuario\documents\programacion 2021 private\tp en codeblocks\trabajopractico3\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+	"dam.h"
+
+1565993298 c:\users\usuario\documents\programacion 2021 private\tp en codeblocks\trabajopractico3\linkedlist.h
+
+1624300884 c:\users\usuario\documents\programacion 2021 private\tp en codeblocks\trabajopractico3\employee.h
+	"LinkedList.h"
+
+1624302803 source:c:\users\usuario\documents\programacion 2021 private\tp en codeblocks\trabajopractico3\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"dam.h"
+
+1624306005 source:c:\users\usuario\documents\programacion 2021 private\tp en codeblocks\trabajopractico3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"dam.h"
+
+1624289422 c:\users\usuario\documents\programacion 2021 private\tp en codeblocks\trabajopractico3\controller.h
+
+1624305247 source:c:\users\usuario\documents\programacion 2021 private\tp en codeblocks\trabajopractico3\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1624300967 source:c:\users\usuario\documents\programacion 2021 private\tp en codeblocks\trabajopractico3\dam.c
+	<ctype.h>
+	"dam.h"
+
+1624299060 c:\users\usuario\documents\programacion 2021 private\tp en codeblocks\trabajopractico3\dam.h
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+
+1624131120 c:\users\usuario\documents\programacion 2021 private\tp en codeblocks\trabajopractico3\parser.h
+
+1624306373 source:c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico3\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+	"dam.h"
+
+1565993298 c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico3\linkedlist.h
+
+1624300884 c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico3\employee.h
+	"LinkedList.h"
+
+1624131120 c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico3\parser.h
+
+1624299060 c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico3\dam.h
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+
+1624312780 source:c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico3\dam.c
+	<ctype.h>
+	"dam.h"
+
+1624312491 source:c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico3\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"dam.h"
+
+1624311366 source:c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"dam.h"
+
+1624289422 c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico3\controller.h
+
+1624305247 source:c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico3\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
