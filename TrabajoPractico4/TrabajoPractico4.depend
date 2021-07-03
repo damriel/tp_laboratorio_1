@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1624927050 source:c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico4\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1624923575 c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico4\linkedlist.h
+
+1625341820 source:c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"dam.h"
+
+1624312491 source:c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico4\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"dam.h"
+
+1624300884 c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico4\employee.h
+	"LinkedList.h"
+
+1624299060 c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico4\dam.h
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+
+1625341158 source:c:\users\usuario\documents\programacion 2021 private\trabajos practicos\tp_laboratorio_1\trabajopractico4\dam.c
+	<ctype.h>
+	"dam.h"
+
