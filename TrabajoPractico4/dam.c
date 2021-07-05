@@ -45,35 +45,18 @@ int menuOpciones()
     printf("7) Eliminar todos los elementos de la LinkedList (ll_clear).\n");
     printf("8) Borrar la LinkedList (ll_deleteLinkedList).\n");
     printf("9) Conseguir el indice de emp2 ('Bob') (ll_indexOf).\n");
-    printf("10) .\n");
-    printf("11) .\n");
-    printf("12) .\n");
-    printf("13) .\n");
-    printf("14) .\n");
-    printf("15) .\n");
-    printf("16) .\n");
-    printf("17) .\n");
-    printf("18) .\n");
-    printf("19) .\n");
-    printf("20) .\n");
-    printf("21) Salir.\n");
+    printf("10) Verificar si la lista esta vacia (ll_isEmpty).\n");
+    printf("11) Agrega un empleado en el indice 3 de la lista (ll_push).\n");
+    printf("12) Saca al empleado del indice 3 y lo guarda en un puntero auxiliar (ll_pop).\n");
+    printf("13) Verifica si el empleado 'Juan' se encuentra en la lista (ll_contains).\n");
+    printf("14) Crea una copia de 'lista' y verifica si los empleados de la copia estan en 'lista' (ll_containsAll y ll_subList).\n");
+    printf("15) Clona la lista completa en lista2.\n");
+    printf("16) Ordenar empleados por nombre (ll_sort).\n");
+    printf("17) Salir.\n");
 
-    /*
-    int ll_indexOf(LinkedList* this, void* pElement);
-    int ll_isEmpty(LinkedList* this);
-    int ll_push(LinkedList* this, int index, void* pElement);
-    void* ll_pop(LinkedList* this,int index);                           //elimina un elemento (los enlaces a ese elemento) y devuelve un puntero a ese elemento
-    int ll_contains(LinkedList* this, void* pElement);
-    int ll_containsAll(LinkedList* this,LinkedList* this2);
-    LinkedList* ll_subList(LinkedList* this,int from,int to);
-    LinkedList* ll_clone(LinkedList* this);
-    int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order);
-    LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void*));
-    */
-
-    while(retorno<1 || retorno>10)
+    while(retorno<1 || retorno>17)
     {
-        dam_getNumero(&retorno,"Ingrese una opcion: ", "ERROR. Ingrese una opcion valida.\n",1,10,5);
+        dam_getNumero(&retorno,"Ingrese una opcion: ", "ERROR. Ingrese una opcion valida.\n",1,17,5);
     }
     return retorno;
 }
